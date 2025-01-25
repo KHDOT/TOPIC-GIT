@@ -1,0 +1,115 @@
+body {
+    display: grid;
+    background-color: hsl(0, 0%, 8%);
+    align-content: center;
+    justify-content: center;
+    margin: 7rem;
+}
+
+main {
+    background-color: hsl(0, 0%, 12%);
+    width: 25rem;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    main {
+        width: 22rem;
+    }
+}
+
+@media (max-width: 350px) {
+    main {
+    width: 18rem;
+    }
+}
+
+main nav img {
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+}
+
+h1 {
+    font-family: inter;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-top: 1.4rem;
+    margin-bottom: 0;
+}
+
+.p1 {
+    font-family: inter;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 0.4rem;
+    color: hsl(75, 94%, 57%);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.p2 {
+    font-family: inter;
+    font-size: 14px;
+    color: white;
+    font-weight: 200;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+main section {
+    background-color: hsl(0, 0%, 20%);
+    width: 20rem;
+    height: 3rem;
+    border-radius: 7px;
+    margin: 0.65rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+main section span {
+    font-family: inter;
+    color: white;
+}
+main section a {
+    text-decoration: none;
+}
+
+main section:hover {
+    background-color: hsl(0, 0%, 30%);
+    transition: background-color 0.2s;
+ }
+
+main section:active {
+   background-color: hsl(75, 94%, 57%);
+   transition: background-color 0.2s;
+}
+
+@media (max-width: 350px) {
+    .sections {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 250px) {
+    main {
+        width: 13rem;
+    }
+    
+    .sections {
+        width: 12rem;
+    }
+
+    .p2 {
+        font-size: 11px;
+    }
+}
